@@ -1,0 +1,115 @@
+{
+  "app": {
+    "nome": "Discoffe"
+  },
+
+  "inicio": {
+    "bemvindo": "Bem-vindo à",
+    "titulo": "DISCOFFE",
+    "subtitulo": "Quem somos?",
+    "texto": "A Discoffe é uma experiência que mistura o melhor de uma cafeteria com a energia de uma discoteca.\n\nAqui, você pode saborear nossos cafés, bebidas e opções do cardápio enquanto aproveita um ambiente descontraído, divertido e cheio de música.\n\nNo nosso app, você também poderá conferir o cardápio e com isso vai poder saber mais sobre o nosso jogo!"
+  },
+
+  "cardapio": {
+    "titulo": "Cardápio",
+    "produtos": [
+      {
+        "nome": "Capuccino",
+        "ingredientes": "contém : Café espresso , Chocolate em pó , Leite",
+        "preco": 8.00,
+        "imagem": "assets/images/capuccino.png"
+      },
+      {
+        "nome": "Chocolate quente",
+        "ingredientes": "contém : Chocolate em pó , Leite quente",
+        "preco": 5.00,
+        "imagem": "assets/images/chocolate_quente.png"
+      },
+      {
+        "nome": "Café espresso",
+        "ingredientes": "contém : café",
+        "preco": 4.00,
+        "imagem": "assets/images/cafe_expresso.jpg"
+      },
+      {
+        "nome": "Pão de queijo",
+        "ingredientes": "contém : Queijo , Polvilho",
+        "preco": 4.00,
+        "imagem": "assets/images/pao_de_queijo.png"
+      },
+      {
+        "nome": "Bolo de cenoura com chocolate",
+        "ingredientes": "contém : Cenoura , Chocolate , Farinha",
+        "preco": 8.00,
+        "imagem": "assets/images/bolo_de_cenoura.png"
+      },
+      {
+        "nome": "Café com leite",
+        "ingredientes": "contém : Café espresso , Leite vaporizado",
+        "preco": 6.00,
+        "imagem": "assets/images/cafe_com_leite.png"
+      },
+      {
+        "nome": "Frappé de chocolate",
+        "ingredientes": "contém : Chocolate , Leite , Gelo , Chantilly",
+        "preco": 12.00,
+        "imagem": "assets/images/frappe_de_chocolate.png"
+      }
+    ]
+  },
+
+  "jogo": {
+    "titulo": "ReHarmonia",
+    "sobreTitulo": "Sobre o jogo",
+    "sobreTexto": "Em ReHarmonia, a Musicidade perde sua harmonia após o roubo na cafeteria da Discoffe. Loona parte em uma aventura para recuperar os pertences da Discoffe, enfrentando desafios e inimigos pelo caminho.",
+    "trailerTitulo": "Trailer",
+    "botaoPersonagens": "PERSONAGENS",
+    "beneficiosTitulo": "Benefícios",
+    "beneficiosTexto": "Ao jogar, o usuário acumula pontos que podem ser usados em compras na Discoffe. Além disso, pode se divertir, explorar a história e conhecer melhor a cafeteria.",
+    "botaoJogar": "JOGUE\nAGORA!"
+  },
+
+  "personagens": {
+    "titulo": "Personagens",
+    "introducao": "Conheça alguns personagens de ReHarmonia e um pouco mais de sua história!",
+    "lista": [
+      {
+        "nome": "Loona",
+        "imagem": "assets/images/loona.png",
+        "descricao": "Loona é a protagonista da aventura. Corajosa e determinada, ela enfrenta desafios e inimigos para recuperar a Discoffe e restaurar a harmonia de Musicidade."
+      },
+      {
+        "nome": "Dímedo",
+        "imagem": "assets/images/dimedo.png",
+        "descricao": "Dímedo é o antagonista da história. Ele roubou a Discoffe e a levou para o vale do silêncio, causando o caos em Musicidade. Agora, Loona precisa enfrentar os desafios causados por ele para salvar a cidade."
+      },
+      {
+        "nome": "Glubus",
+        "imagem": "assets/images/glubus.png",
+        "descricao": "Criados por Dímedo a partir de objetos da Discoffe, os Glubus ganharam vida através de magia e se tornaram perigosos. Eles perseguem Loona e tentaram mordê-la."
+      },
+      {
+        "nome": "Caixinha de som",
+        "imagem": "assets/images/caixinhaDesom.png",
+        "descricao": "Essas caixas da Discoffe foram encantadas por Dímedo e transformadas em inimigos. Elas tentam cair sobre Loona quando ela chegar perto."
+      }
+    ]
+  },
+
+  "config": {
+    "titulo": "Configurações",
+    "aparenciaTitulo": "Aparência",
+    "temaEscuro": "Tema escuro",
+    "contatoTitulo": "Contato",
+    "endereco": "Rua francisco bellazzi, 158 ",
+    "horario": "Seg a Sáb, 9h às 22h",
+    "instagram": "@discoffe",
+    "whatsapp": "(11) 96180-4254",
+    "sobreTitulo": "Sobre o app",
+    "nomeApp": "Discoffe App",
+    "versao": "Versão 1.0.1",
+    "equipeTitulo": "Desenvolvido por:",
+    "equipe": "enzo, lorena, sarah, pietro, mussato",
+    "feitoCom": "Feito com Flutter"
+  }
+}
