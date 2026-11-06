@@ -9,7 +9,7 @@ class CardapioPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // transforma a lista do JSON em uma lista de produto :P
+    // transforma a lista do JSON em uma lista de produto
     final produtos =
         Conteudo.lista('cardapio.produtos').map(Produto.fromJson).toList();
 
@@ -23,12 +23,13 @@ class CardapioPage extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 48,
                 fontWeight: FontWeight.w900,
-                color: Cores.roxoMedio,
+                color: Cores.corTitulo,
+                shadows: Cores.sombraTitulo,
               ),
             ),
             const SizedBox(height: 12),
 
-            // caixa grande ea lista rola dentro dela
+            // Caixa grande; a lista rola dentro dela
             Expanded(
               child: Container(
                 decoration: BoxDecoration(
@@ -66,7 +67,7 @@ class CardProduto extends StatelessWidget {
       ),
       child: Row(
         children: [
-          // foto fica borda
+          // coloca a foto com borda
           Container(
             decoration: BoxDecoration(
               border: Border.all(color: Colors.black, width: 3),
@@ -79,7 +80,7 @@ class CardProduto extends StatelessWidget {
                 width: 80,
                 height: 80,
                 fit: BoxFit.cover,
-                // se a imagem ainda nao existir, mostra um icone no lugar
+                // se a imagem ainda nao existir mostra um icone no lugar
                 errorBuilder: (context, erro, stack) => Container(
                   width: 80,
                   height: 80,
@@ -95,7 +96,7 @@ class CardProduto extends StatelessWidget {
           ),
           const SizedBox(width: 12),
 
-          //os nome e ingredientes
+          // nome e o ingredientes
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -120,7 +121,7 @@ class CardProduto extends StatelessWidget {
           ),
           const SizedBox(width: 8),
 
-          // o preco
+          //os preços
           Text(
             produto.precoFormatado,
             style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),

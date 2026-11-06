@@ -9,7 +9,7 @@ class PersonagensPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // a lista do JSON 
+    // pega a lista do Json e transforma em uma lista de personagem
     final personagens =
         Conteudo.lista('personagens.lista').map(Personagem.fromJson).toList();
 
@@ -26,13 +26,13 @@ class PersonagensPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 48,
                     fontWeight: FontWeight.w900,
-                    color: Cores.roxoMedio,
-                    shadows: [Shadow(color: Colors.cyan, offset: Offset(2, 2))],
+                    color: Cores.corTitulo,
+                    shadows: Cores.sombraTitulo,
                   ),
                 ),
               ),
 
-              // linha decorativa
+              // linha de decoraçao
               const Row(
                 children: [
                   Icon(Icons.diamond_outlined, size: 22),
@@ -55,7 +55,7 @@ class PersonagensPage extends StatelessWidget {
   }
 }
 
-// nome + imagem + texto de um personagem
+// o nome + imagem + texto de um personagem
 class _BlocoPersonagem extends StatelessWidget {
   final Personagem personagem;
   const _BlocoPersonagem({required this.personagem});
@@ -77,7 +77,7 @@ class _BlocoPersonagem extends StatelessWidget {
             child: Image.asset(
               personagem.imagem,
               fit: BoxFit.cover,
-              // Ses a imagem ainda não existir a mostra um icone de pessoinhno lugar
+              // Se a imagem ainda não existir, mostra um ícone no lugar
               errorBuilder: (context, erro, stack) => Container(
                 color: Cores.roxoMedio,
                 child: const Icon(Icons.person, size: 90, color: Colors.white),
@@ -93,7 +93,7 @@ class _BlocoPersonagem extends StatelessWidget {
   }
 }
 
-// titulo roxo com nome do personagem
+// titulo (nome do personagem)
 class _Titulo extends StatelessWidget {
   final String texto;
   const _Titulo(this.texto);
@@ -108,14 +108,15 @@ class _Titulo extends StatelessWidget {
         style: const TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.w900,
-          color: Cores.roxoMedio,
+          color: Cores.corTitulo,
+          shadows: Cores.sombraTitulo,
         ),
       ),
     );
   }
 }
 
-// a caixa e o texto
+//a caixa com texto branco
 class _CaixaRoxa extends StatelessWidget {
   final String texto;
   const _CaixaRoxa({required this.texto});

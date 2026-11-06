@@ -27,14 +27,14 @@ class ConfigPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 48,
                     fontWeight: FontWeight.w900,
-                    color: Cores.roxoMedio,
-                    shadows: [Shadow(color: Colors.cyan, offset: Offset(2, 2))],
+                    color: Cores.corTitulo,
+                    shadows: Cores.sombraTitulo,
                   ),
                 ),
               ),
               const SizedBox(height: 24),
 
-              //aparencia
+              //Aparencia 
               _Secao(
                 titulo: t('config.aparenciaTitulo'),
                 child: ValueListenableBuilder<ThemeMode>(
@@ -71,7 +71,7 @@ class ConfigPage extends StatelessWidget {
               ),
               const SizedBox(height: 28),
 
-              // creditos aq
+              //  Sobre  ou Créditos
               _Secao(
                 titulo: t('config.sobreTitulo'),
                 child: Column(
@@ -108,8 +108,8 @@ class ConfigPage extends StatelessWidget {
   }
 }
 
-
-class _Secao extends StatelessWidget {//caixa e o texto
+// titulo + caixa roxa
+class _Secao extends StatelessWidget {
   final String titulo;
   final Widget child;
   const _Secao({required this.titulo, required this.child});
@@ -125,7 +125,8 @@ class _Secao extends StatelessWidget {//caixa e o texto
             style: const TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.w900,
-              color: Cores.roxoMedio,
+              color: Cores.corTitulo,
+              shadows: Cores.sombraTitulo,
             ),
           ),
         ),
@@ -144,7 +145,7 @@ class _Secao extends StatelessWidget {//caixa e o texto
   }
 }
 
-// linha com icone + texto (usada no Contato)
+// linha com icone + texto que e usada no contato
 class _Linha extends StatelessWidget {
   final IconData icone;
   final String texto;

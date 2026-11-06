@@ -23,18 +23,18 @@ class InicioPage extends StatelessWidget {
             ),
             const SizedBox(height: 4),
 
-            //o titulo principal
+            // titulo principal da pagina
             Text(
               t('inicio.titulo'),
               style: const TextStyle(
                 fontSize: 56,
                 fontWeight: FontWeight.w900,
-                color: Cores.roxoMedio,
-                shadows: [Shadow(color: Colors.cyan, offset: Offset(2, 2))],
+                color: Cores.corTitulo,
+                shadows: Cores.sombraTitulo,
               ),
             ),
 
-            // a linha decorativa
+            // linha decorativa em baixo do titulo
             const Row(
               children: [
                 Icon(Icons.diamond_outlined, size: 22),
@@ -49,12 +49,13 @@ class InicioPage extends StatelessWidget {
               style: const TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.w900,
-                color: Cores.roxoMedio,
+                color: Cores.corTitulo,
+                shadows: Cores.sombraTitulo,
               ),
             ),
             const SizedBox(height: 12),
 
-            //aq e a caixa roxa com o texto
+            // a caixa roxa com o texto
             Expanded(
               child: Container(
                 width: double.infinity,

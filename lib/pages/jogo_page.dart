@@ -10,7 +10,7 @@ class JogoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return PaginaBase(
-      // aqui faz a pagina inteira rolar
+      // Aqui faz a pagina inteira rola
       child: Scrollbar(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(20),
@@ -22,13 +22,13 @@ class JogoPage extends StatelessWidget {
                   style: const TextStyle(
                     fontSize: 48,
                     fontWeight: FontWeight.w900,
-                    color: Cores.roxoMedio,
-                    shadows: [Shadow(color: Colors.cyan, offset: Offset(2, 2))],
+                    color: Cores.corTitulo,
+                    shadows: Cores.sombraTitulo,
                   ),
                 ),
               ),
 
-              // linha decorativa
+              //a linha decorativa
               const Row(
                 children: [
                   Icon(Icons.diamond_outlined, size: 22),
@@ -46,7 +46,7 @@ class JogoPage extends StatelessWidget {
               const TrailerPlayer(),
               const SizedBox(height: 32),
 
-              // botao "Personagens"
+              // botão do personagens
               ElevatedButton(
                 onPressed: () =>
                     Navigator.pushReplacementNamed(context, '/personagens'),
@@ -74,9 +74,9 @@ class JogoPage extends StatelessWidget {
               _CaixaRoxa(texto: t('jogo.beneficiosTexto')),
               const SizedBox(height: 40),
 
-              // o botao "Jogue agora"
+              // botao jogue agora
               ElevatedButton(
-                onPressed: () {}, // depois a gente define o que ele abre
+                onPressed: () {}, // depois eu defino o que ele abre
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Cores.roxo,
                   foregroundColor: Colors.white,
@@ -105,7 +105,7 @@ class JogoPage extends StatelessWidget {
   }
 }
 
-// titulo roxo de cada seçao tipo "Sobre o jogo", "Trailer" 
+// titulo de cada seção tipo o jogo ou Trailer
 class _Titulo extends StatelessWidget {
   final String texto;
   const _Titulo(this.texto);
@@ -119,14 +119,15 @@ class _Titulo extends StatelessWidget {
         style: const TextStyle(
           fontSize: 30,
           fontWeight: FontWeight.w900,
-          color: Cores.roxoMedio,
+          color: Cores.corTitulo,
+          shadows: Cores.sombraTitulo,
         ),
       ),
     );
   }
 }
 
-// caixa roxa com o texto branco
+//cria caixa roxa com texto branco
 class _CaixaRoxa extends StatelessWidget {
   final String texto;
   const _CaixaRoxa({required this.texto});
