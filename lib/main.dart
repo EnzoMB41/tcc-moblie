@@ -7,6 +7,7 @@ import 'pages/cardapio_page.dart';
 import 'pages/jogo_page.dart';
 import 'pages/personagens_page.dart';
 import 'pages/config_page.dart';
+import 'pages/mecanicas_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -47,6 +48,7 @@ class DiscoffeApp extends StatelessWidget {
             '/jogo': (context) => const JogoPage(),
             '/personagens': (context) => const PersonagensPage(),
             '/config': (context) => const ConfigPage(),
+            '/mecanicas': (context) => const MecanicasPage(),
           },
         );
       },

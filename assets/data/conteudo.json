@@ -64,6 +64,7 @@
     "sobreTexto": "Em ReHarmonia, a Musicidade perde sua harmonia após o roubo na cafeteria da Discoffe. Loona parte em uma aventura para recuperar os pertences da Discoffe, enfrentando desafios e inimigos pelo caminho.",
     "trailerTitulo": "Trailer",
     "botaoPersonagens": "PERSONAGENS",
+    "botaoMecanicas": "MECÂNICAS",
     "beneficiosTitulo": "Benefícios",
     "beneficiosTexto": "Ao jogar, o usuário acumula pontos que podem ser usados em compras na Discoffe. Além disso, pode se divertir, explorar a história e conhecer melhor a cafeteria.",
     "botaoJogar": "JOGUE\nAGORA!"
@@ -96,6 +97,33 @@
     ]
   },
 
+  "mecanicas": {
+    "titulo": "Mecânicas",
+    "lista": [
+      { 
+        "texto": "Texto da mecânica 1",
+       "imagem": "assets/images/mecanica1.png"
+       },
+      { 
+        "texto": "Texto da mecânica 2",
+       "imagem": "assets/images/mecanica2.png" 
+      },
+      { 
+        "texto": "Texto da mecânica 3",
+       "imagem": "assets/images/mecanica3.png" 
+      },
+      { 
+        "texto": "Texto da mecânica 4",
+       "imagem": "assets/images/mecanica4.png" 
+      },
+      { 
+        "texto": "Texto da mecânica 5",
+         "imagem": "assets/images/mecanica5.png" 
+        }
+    ]
+  },  
+
+  
   "config": {
     "titulo": "Configurações",
     "aparenciaTitulo": "Aparência",
