@@ -101,23 +101,23 @@
     "titulo": "Mecânicas",
     "lista": [
       { 
-        "texto": "Texto da mecânica 1",
+        "texto": "Loona usa a sua guitarra como arma. Com ela, é possível atacar e derrotar os inimigos que aparecem pelo caminho.",
        "imagem": "assets/images/mecanica1.png"
        },
       { 
-        "texto": "Texto da mecânica 2",
+        "texto": "Além da guitarra, Loona também pode derrotar inimigos pulando por cima deles. Um pulo bem calculado pode ser a saída para se livrar do perigo.",
        "imagem": "assets/images/mecanica2.png" 
       },
       { 
-        "texto": "Texto da mecânica 3",
+        "texto": "Loona anda e pula pelo cenário de Musicidade para desviar dos perigos, escapar dos inimigos e alcançar novos lugares durante a aventura.",
        "imagem": "assets/images/mecanica3.png" 
       },
       { 
-        "texto": "Texto da mecânica 4",
+        "texto": "Durante a jornada, Loona recupera os pertences da Discoffe levados por Dímedo. Cada objeto encontrado deixa a Musicidade mais perto de recuperar a sua harmonia.",
        "imagem": "assets/images/mecanica4.png" 
       },
       { 
-        "texto": "Texto da mecânica 5",
+        "texto": "Ao jogar, o usuário acumula pontos que podem ser usados em compras na Discoffe, deixando a aventura ainda mais divertida e recompensadora.",
          "imagem": "assets/images/mecanica5.png" 
         }
     ]
