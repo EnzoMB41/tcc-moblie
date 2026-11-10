@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import '../conteudo.dart';
 import '../cores.dart';
 import '../tema.dart';
@@ -34,7 +35,7 @@ class ConfigPage extends StatelessWidget {
               ),
               const SizedBox(height: 24),
 
-              //Aparencia 
+              //A aparencia da pag
               _Secao(
                 titulo: t('config.aparenciaTitulo'),
                 child: ValueListenableBuilder<ThemeMode>(
@@ -57,15 +58,27 @@ class ConfigPage extends StatelessWidget {
               ),
               const SizedBox(height: 28),
 
-              //contato
+              //aqui o contato
               _Secao(
                 titulo: t('config.contatoTitulo'),
                 child: Column(
                   children: [
-                    _Linha(Icons.place, t('config.endereco')),
+                    _Linha(
+                      Icons.place,
+                      t('config.endereco'),
+                      link: t('config.enderecoLink'),
+                    ),
                     _Linha(Icons.schedule, t('config.horario')),
-                    _Linha(Icons.camera_alt, t('config.instagram')),
-                    _Linha(Icons.phone, t('config.whatsapp')),
+                    _Linha(
+                      Icons.camera_alt,
+                      t('config.instagram'),
+                      link: t('config.instagramLink'),
+                    ),
+                    _Linha(
+                      Icons.phone,
+                      t('config.whatsapp'),
+                      link: t('config.whatsappLink'),
+                    ),
                   ],
                 ),
               ),
@@ -108,7 +121,7 @@ class ConfigPage extends StatelessWidget {
   }
 }
 
-// titulo + caixa roxa
+// titulo com a caixa roxa
 class _Secao extends StatelessWidget {
   final String titulo;
   final Widget child;
@@ -146,21 +159,52 @@ class _Secao extends StatelessWidget {
 }
 
 // linha com icone + texto que e usada no contato
+// se tiver link ela fica clicavel
 class _Linha extends StatelessWidget {
   final IconData icone;
   final String texto;
-  const _Linha(this.icone, this.texto);
+  final String? link;
+  const _Linha(this.icone, this.texto, {this.link});
+
+  // abre o link no navegador ou no app
+  Future<void> _abrir(BuildContext context) async {
+    final aberto = await launchUrl(
+      Uri.parse(link!),
+      mode: LaunchMode.externalApplication,
+    );
+    // se nao abrir mostra o aviso la embaixo
+    if (!aberto && context.mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(t('config.erroLink'))),
+      );
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
-      child: Row(
-        children: [
-          Icon(icone, color: Colors.white),
-          const SizedBox(width: 12),
-          Expanded(child: Text(texto, style: _branco)),
-        ],
+    final clicavel = link != null;
+
+    return InkWell(
+      onTap: clicavel ? () => _abrir(context) : null,
+      borderRadius: BorderRadius.circular(12),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: 8),
+        child: Row(
+          children: [
+            Icon(icone, color: Colors.white),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Text(
+                texto,
+                style: clicavel
+                    ? _branco.copyWith(decoration: TextDecoration.underline)
+                    : _branco,
+              ),
+            ),
+            if (clicavel)
+              const Icon(Icons.open_in_new, color: Colors.white, size: 18),
+          ],
+        ),
       ),
     );
   }
