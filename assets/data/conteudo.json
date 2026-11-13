@@ -85,6 +85,11 @@
         "descricao": "Dímedo é o antagonista da história. Ele roubou a Discoffe e a levou para o vale do silêncio, causando o caos em Musicidade. Agora, Loona precisa enfrentar os desafios causados por ele para salvar a cidade."
       },
       {
+      "nome": "Bruxa do Silêncio",
+      "imagem": "assets/images/bruxa.png",
+      "descricao": "Guardiã da Muralha do Silêncio, a fronteira entre Musicidade e o Vale do Silêncio. Com seu baixo e a Flauta Amorosa, ela lança ondas de som que obrigam Loona a saltar e desviar. Por dever, ela impede a passagem de quem quer atravessar."
+      },
+      {
         "nome": "Glubus",
         "imagem": "assets/images/glubus.png",
         "descricao": "Criados por Dímedo a partir de objetos da Discoffe, os Glubus ganharam vida através de magia e se tornaram perigosos. Eles perseguem Loona e tentaram mordê-la."
@@ -101,22 +106,27 @@
     "titulo": "Mecânicas",
     "lista": [
       { 
+        "titulo": "Bater com a guitarra",
         "texto": "Loona usa a sua guitarra como arma. Com ela, é possível atacar e derrotar os inimigos que aparecem pelo caminho.",
        "imagem": "assets/images/mecanica1.png"
        },
       { 
+        "titulo": "Pular nos inimigos",
         "texto": "Além da guitarra, Loona também pode derrotar inimigos pulando por cima deles. Um pulo bem calculado pode ser a saída para se livrar do perigo.",
        "imagem": "assets/images/mecanica2.png" 
       },
-      { 
+      {
+        "titulo": "Andar e pular", 
         "texto": "Loona anda e pula pelo cenário de Musicidade para desviar dos perigos, escapar dos inimigos e alcançar novos lugares durante a aventura.",
        "imagem": "assets/images/mecanica3.png" 
       },
       { 
+        "titulo": "Coletar pertences",
         "texto": "Durante a jornada, Loona recupera os pertences da Discoffe levados por Dímedo. Cada objeto encontrado deixa a Musicidade mais perto de recuperar a sua harmonia.",
        "imagem": "assets/images/mecanica4.png" 
       },
       { 
+        "titulo": "Ganhar pontos",
         "texto": "Ao jogar, o usuário acumula pontos que podem ser usados em compras na Discoffe, deixando a aventura ainda mais divertida e recompensadora.",
          "imagem": "assets/images/mecanica5.png" 
         }

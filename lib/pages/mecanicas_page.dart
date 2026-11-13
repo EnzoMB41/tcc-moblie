@@ -51,6 +51,7 @@ class MecanicasPage extends StatelessWidget {
                 for (final mecanica in mecanicas)
                   CardCarrossel(
                     imagem: mecanica.imagem,
+                     titulo: mecanica.titulo,
                     descricao: mecanica.texto,
                   ),
               ],
