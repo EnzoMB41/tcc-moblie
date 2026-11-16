@@ -95,10 +95,20 @@
         "descricao": "Criados por Dímedo a partir de objetos da Discoffe, os Glubus ganharam vida através de magia e se tornaram perigosos. Eles perseguem Loona e tentaram mordê-la."
       },
       {
-        "nome": "Caixinha de som",
-        "imagem": "assets/images/caixinhaDesom.png",
-        "descricao": "Essas caixas da Discoffe foram encantadas por Dímedo e transformadas em inimigos. Elas tentam cair sobre Loona quando ela chegar perto."
-      }
+      "nome": "Viola",
+      "imagem": "assets/images/npcViola.png",
+      "descricao": "Moradora de Musicidade e a primeira pessoa que Loona encontra na aventura. Ela presenciou o que aconteceu com a Discoffe e conta tudo à Loona. Assustada, mas ainda esperançosa, pede ajuda para salvar a cidade."
+      },
+      {
+      "nome": "Cadêncio",
+      "imagem": "assets/images/npcCadencio.png",
+      "descricao": "Morador de Musicidade com ar de velho marujo. Ele viu de perto tudo o que aconteceu na Discoffe e sabe onde cada fragmento foi parar. É ele quem alerta Loona sobre os perigos que ela vai enfrentar pelo caminho."
+      },
+      {
+      "nome": "Cacófio",
+      "imagem": "assets/images/npcCacofio.png",
+      "descricao": "Criado de Dímedo e morador do Vale do Silêncio. Cansado e abatido, ele passa o tempo sentado diante de um cupcake colorido, assustado demais para tocar nele e sem forças para impedir quem se aproxima."
+    } 
     ]
   },
 
