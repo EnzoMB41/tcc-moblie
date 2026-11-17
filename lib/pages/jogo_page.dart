@@ -3,6 +3,7 @@ import '../conteudo.dart';
 import '../cores.dart';
 import '../widgets/pagina_base.dart';
 import '../widgets/trailer_player.dart';
+import '../widgets/linha_decorativa.dart';
 
 class JogoPage extends StatelessWidget {
   const JogoPage({super.key});
@@ -28,14 +29,9 @@ class JogoPage extends StatelessWidget {
                 ),
               ),
 
-              // linha 
-              const Row(
-                children: [
-                  Icon(Icons.diamond_outlined, size: 22),
-                  Expanded(child: Divider(color: Colors.black, thickness: 4)),
-                  Icon(Icons.diamond_outlined, size: 22),
-                ],
-              ),
+              const LinhaDecorativa(),
+              
+
               const SizedBox(height: 16),
 
               _Titulo(t('jogo.sobreTitulo')),

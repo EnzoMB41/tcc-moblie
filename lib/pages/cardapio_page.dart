@@ -3,6 +3,7 @@ import '../conteudo.dart';
 import '../cores.dart';
 import '../models/produto.dart';
 import '../widgets/pagina_base.dart';
+import '../widgets/linha_decorativa.dart';
 
 class CardapioPage extends StatelessWidget {
   const CardapioPage({super.key});
@@ -27,9 +28,13 @@ class CardapioPage extends StatelessWidget {
                 shadows: Cores.sombraTitulo,
               ),
             ),
-            const SizedBox(height: 12),
 
-            // Caixa grande; a lista rola dentro dela
+
+             const LinhaDecorativa(), // aqui puxa a linha decorativa
+            const SizedBox(height: 12),
+            
+
+            // Caixa grande e a lista rola dentro dela
             Expanded(
               child: Container(
                 decoration: BoxDecoration(

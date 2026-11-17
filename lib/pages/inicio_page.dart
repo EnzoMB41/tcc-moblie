@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../conteudo.dart';
 import '../cores.dart';
 import '../widgets/pagina_base.dart';
+import '../widgets/linha_decorativa.dart';
 
 class InicioPage extends StatelessWidget {
   const InicioPage({super.key});
@@ -35,13 +36,8 @@ class InicioPage extends StatelessWidget {
             ),
 
             // linha decorativa em baixo do titulo
-            const Row(
-              children: [
-                Icon(Icons.diamond_outlined, size: 22),
-                Expanded(child: Divider(color: Colors.black, thickness: 4)),
-                Icon(Icons.diamond_outlined, size: 22),
-              ],
-            ),
+             const LinhaDecorativa(),
+             
             const SizedBox(height: 12),
 
             Text(
