@@ -1,17 +1,24 @@
-# tcc_flutter
+# Aplicativo Discoffe 
 
-A new Flutter project.
+- colocar tesxto
 
-## Getting Started
+## Sobre o aplicativo
 
-This project is a starting point for a Flutter application.
+- colocar tesxto
 
-A few resources to get you started if this is your first Flutter project:
+## Tecnologias Utilizadas
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## integrantes do projeto
+Enzo Miranda Bezerra - Analista Desen. Mobile
+Lorena Mansi - Designer UI Ux
+Pietro Martins Souza - Desen. Gameplay
+Sarah Lisboa de Oliveira - Game Designer 
+Vitor Mussato Rodrigues - Diretor Criativo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Sumário da Wiki
+
+- deixar pra dps
+
+## Link do Sumário
+
+-deixar pra dps
