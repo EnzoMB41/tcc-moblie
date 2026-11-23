@@ -59,7 +59,7 @@ class JogoPage extends StatelessWidget {
               const SizedBox(height: 40),
 
               // botao do "Jogue agora"
-              ElevatedButton(
+              /*ElevatedButton(
                 onPressed: () {}, // depois a gente define o que ele abre
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Cores.roxo,
@@ -79,7 +79,7 @@ class JogoPage extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-              ),
+              ),*/
               const SizedBox(height: 24),
             ],
           ),

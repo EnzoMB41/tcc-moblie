@@ -39,6 +39,7 @@ class DiscoffeApp extends StatelessWidget {
               seedColor: Cores.roxo,
               brightness: Brightness.dark,
             ),
+
             scaffoldBackgroundColor: const Color(0xFF1A1625),
           ),
           initialRoute: '/',
