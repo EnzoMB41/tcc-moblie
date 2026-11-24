@@ -116,30 +116,25 @@
     "titulo": "Mecânicas",
     "lista": [
       { 
-        "titulo": "Bater com a guitarra",
-        "texto": "Loona usa a sua guitarra como arma. Com ela, é possível atacar e derrotar os inimigos que aparecem pelo caminho.",
-       "imagem": "assets/images/mecanica1.png"
-       },
+      "titulo": "Bater com a guitarra",
+      "texto": "Loona utiliza sua guitarra para atacar e derrotar os inimigos que encontra durante a aventura.",
+     "imagem": "assets/images/mecanica1.png"
+     },
       { 
-        "titulo": "Pular nos inimigos",
-        "texto": "Além da guitarra, Loona também pode derrotar inimigos pulando por cima deles. Um pulo bem calculado pode ser a saída para se livrar do perigo.",
-       "imagem": "assets/images/mecanica2.png" 
+      "titulo": "Pulo",
+      "texto": "Loona pode pular para ultrapassar obstáculos, alcançar plataformas e explorar diferentes áreas do cenário. Além disso, também pode utilizar o salto para derrotar determinados inimigos, pulando sobre eles.",
+      "imagem": "assets/images/mecanica2.png"
       },
       {
-        "titulo": "Andar e pular", 
-        "texto": "Loona anda e pula pelo cenário de Musicidade para desviar dos perigos, escapar dos inimigos e alcançar novos lugares durante a aventura.",
-       "imagem": "assets/images/mecanica3.png" 
+      "titulo": "Andar",
+      "texto": "O jogador controla a movimentação de Loona pelo cenário, permitindo explorar Musicidade, encontrar personagens e seguir pelos diferentes caminhos da aventura.",
+      "imagem": "assets/images/mecanica3.png" 
       },
       { 
-        "titulo": "Coletar pertences",
-        "texto": "Durante a jornada, Loona recupera os pertences da Discoffe levados por Dímedo. Cada objeto encontrado deixa a Musicidade mais perto de recuperar a sua harmonia.",
-       "imagem": "assets/images/mecanica4.png" 
-      },
-      { 
-        "titulo": "Ganhar pontos",
-        "texto": "Ao jogar, o usuário acumula pontos que podem ser usados em compras na Discoffe, deixando a aventura ainda mais divertida e recompensadora.",
-         "imagem": "assets/images/mecanica5.png" 
-        }
+      "titulo": "Flauta Amorosa",
+      "texto": "Após conseguir a Flauta Amorosa, Loona pode tocar melodias que fazem surgir plataformas musicais. Essas plataformas aparecem e desaparecem no ritmo da música, permitindo alcançar lugares antes inacessíveis e desbloquear novos caminhos.",
+      "imagem": "assets/images/mecanica4.png"
+      }
     ]
   },  
 
